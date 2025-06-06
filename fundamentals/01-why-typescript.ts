@@ -5,10 +5,10 @@ const courseName = "Typescript Bootcamp Version 3.0";
 
 
 if(courseName){
-    var subTitle = "Learn Typescript Fundamentals & practice with coding exercises V3";
+    let subTitle = "Learn Typescript Fundamentals & practice with coding exercises V3";
 }
-
 console.log(subTitle);
+
 
 printCourseName(courseName)
 
