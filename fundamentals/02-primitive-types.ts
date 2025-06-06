@@ -41,7 +41,7 @@ console.log("bigNumber:", bigNumber);
 
 // Type Inference Type Annotations
 console.log(`The Total is: ${addNumbers(200, 300, 400)}`);
-function addNumbers(a: number, b: number, c: number){
+function addNumbers(a: number, b: number, c: number){ // Function with type annotations
     const total = a + b + c;
     return `Total is: ${total}`;
 }
@@ -49,7 +49,7 @@ function addNumbers(a: number, b: number, c: number){
 
 // Working on Objects
 
-const userObj: {
+const userObj: { 
     firstName: string;
     lastName: string;
     age: number;
