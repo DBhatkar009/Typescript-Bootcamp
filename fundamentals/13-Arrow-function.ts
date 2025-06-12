@@ -12,4 +12,16 @@ const cb = (title: string) => console.log("Call back Function Save Successfully:
 
 courseTitle({title: "Typescript Fundamentals"}, cb); // Output: Call back Function Save Successfully:  Typescript Fundamentals
 
+//.......................................................................................................
 
+// Typescript Arrow function Spread Operators & Destructing
+// Arrow functions can also be used with destructuring and spread operators for cleaner code.
+
+let userNumbers = [1,2,3,4];
+console.log("userNumbers:", userNumbers); // Output: userNumbers: [ 1, 2, 3, 4 ]
+
+let newUserNumbers = [...userNumbers, 5, 6, 7, 8, 9, 10]; // Using Spread Operator to create a new array with additional numbers
+console.log("newUserNumbers:", newUserNumbers); // Output: newUserNumbers: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+
+const [one, two, three, four] = userNumbers;
+console.log("Destructured values:", one, two, three, four); // Output: Destructured values: 1 2 3 4
