@@ -11,6 +11,7 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
 // They are particularly useful for maintaining the context of 'this' in callbacks and methods.
 function courseTitle(course, callback) {
     var _this = this;
+    debugger;
     this.course = course; // 'this' refers to the current context, which is the course object
     setTimeout(function () {
         var _a, _b;
@@ -19,7 +20,9 @@ function courseTitle(course, callback) {
 }
 // Example usage of the courseTitle function with a callback
 var cb = function (title) { return console.log("Call back Function Save Successfully: ", title); };
-courseTitle({ title: "Typescript Fundamentals" }, cb); // Output: Call back Function Save Successfully:  Typescript Fundamentals
+courseTitle({ title: "Typescript Fundamentals" }, cb); // Output: Call back Function Save Successfully:  
+debugger;
+// Typescript Fundamentals
 //.......................................................................................................
 // Typescript Arrow function Spread Operators & Destructing
 // Arrow functions can also be used with destructuring and spread operators for cleaner code.
@@ -29,3 +32,4 @@ var newUserNumbers = __spreadArray(__spreadArray([], userNumbers, true), [5, 6, 
 console.log("newUserNumbers:", newUserNumbers); // Output: newUserNumbers: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 var one = userNumbers[0], two = userNumbers[1], three = userNumbers[2], four = userNumbers[3];
 console.log("Destructured values:", one, two, three, four); // Output: Destructured values: 1 2 3 4
+//# sourceMappingURL=13-Arrow-function.js.map
