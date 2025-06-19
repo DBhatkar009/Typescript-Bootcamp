@@ -20,6 +20,7 @@ let value6: number = garden;
 let value7: boolean = garden;
 let value8: null = garden;
 
+
 let home: unknown;
 home = "";
 home = 56;
@@ -30,7 +31,11 @@ home = null;
 home =  {};
 home = undefined;
 
+if(typeof home === "string"){
+    let val: string = home
+}
 
+let val: string = home;
 let val1: string = home;
 let val2: number = home;
 let val3: boolean = home;
@@ -39,3 +44,4 @@ let val5: undefined = home;
 let val6: [] = home;
 let val7: {} = home;
 let val8: Function = home;
+

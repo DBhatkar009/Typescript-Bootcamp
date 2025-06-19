@@ -25,6 +25,10 @@ home = [];
 home = null;
 home = {};
 home = undefined;
+if (typeof home === "string") {
+    var val_1 = home;
+}
+var val = home;
 var val1 = home;
 var val2 = home;
 var val3 = home;
