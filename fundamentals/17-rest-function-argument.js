@@ -20,3 +20,15 @@ function getBookCourseDetails(message) {
     }
 }
 getBookCourseDetails("This course is available", coursebookDetails1, coursebookDetails2);
+var createNewCourse = function (title, description, price) {
+    console.log("Creating a new course: ".concat(title, " this course is available for ").concat(price, " dollars & description: ").concat(description));
+    return {
+        title: title,
+        description: description,
+        price: price
+    };
+};
+var newCourse = createNewCourse("Learn Node.js", "A comprehensive guide to mastering Node.js.", 49.99); // Creating a new course using the function
+console.log("New course created: ", newCourse);
+console.log(typeof createNewCourse); // Displaying the type of the new course object
+console.log(typeof newCourse); // Displaying the type of the new course object

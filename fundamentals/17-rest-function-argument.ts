@@ -28,3 +28,19 @@ function getBookCourseDetails(message: string, ...courses: coursebook[]): void{ 
 
 
 getBookCourseDetails("This course is available", coursebookDetails1, coursebookDetails2);
+
+
+const createNewCourse = (title: string, description: string, price: number) : coursebook =>{ // Function to create a new course using the coursebook interface
+ console.log(`Creating a new course: ${title} this course is available for ${price} dollars & description: ${description}`);
+
+ return { // Using object create notation to return a new course object
+    title,
+    description,
+    price
+    }
+ }
+
+ const newCourse = createNewCourse("Learn Node.js", "A comprehensive guide to mastering Node.js.", 49.99);// Creating a new course using the function
+ console.log("New course created: ", newCourse);
+ console.log(typeof createNewCourse); // Displaying the type of the new course object
+ console.log(typeof newCourse); // Displaying the type of the new course object
