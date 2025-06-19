@@ -1,5 +1,4 @@
 // understanding typescript unknown Types
-
 let garden: any;
 garden = [];
 garden = {};
@@ -35,15 +34,15 @@ if(typeof home === "string"){
     let val: string = home
 }
 
-let val: string = home;//
-let val1: string = home;
-let val2: number = home;
-let val3: boolean = home;
-let val4: null = home;
-let val5: undefined = home;
-let val6: [] = home;
-let val7: {} = home;
-let val8: Function = home;
+// let val: string = home;// Error given because of home is undefined or Unknown 
+// let val1: string = home; // if you want not becaming an error on val1 or more 
+// let val2: number = home; // then assign value for home
+// let val3: boolean = home;
+// let val4: null = home;
+// let val5: undefined = home;
+// let val6: [] = home;
+// let val7: {} = home;
+// let val8: Function = home;
 
 
 
