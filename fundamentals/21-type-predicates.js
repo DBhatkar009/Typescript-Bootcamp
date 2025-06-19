@@ -28,7 +28,7 @@ home = undefined;
 if (typeof home === "string") {
     var val_1 = home;
 }
-var val = home;
+var val = home; //
 var val1 = home;
 var val2 = home;
 var val3 = home;
@@ -37,3 +37,16 @@ var val5 = home;
 var val6 = home;
 var val7 = home;
 var val8 = home;
+var car = {
+    name: "Audi",
+    model: "5445AD",
+    price: 5000
+};
+if (isCar(car)) {
+    var box = car === null || car === void 0 ? void 0 : car.name;
+    console.log(box);
+}
+function isCar(value) {
+    var car = value;
+    return (car === null || car === void 0 ? void 0 : car.model) != null && (car === null || car === void 0 ? void 0 : car.name) != null;
+}

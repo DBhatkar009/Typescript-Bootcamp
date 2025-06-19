@@ -35,7 +35,7 @@ if(typeof home === "string"){
     let val: string = home
 }
 
-let val: string = home;
+let val: string = home;//
 let val1: string = home;
 let val2: number = home;
 let val3: boolean = home;
@@ -45,3 +45,27 @@ let val6: [] = home;
 let val7: {} = home;
 let val8: Function = home;
 
+
+
+interface Car {
+    name: string;
+    model: string;
+    price: number;
+}
+
+const car: unknown = {
+    name: "Audi",
+    model: "5445AD",
+    price: 5000
+}
+
+if(isCar(car)){
+   const box = car?.name
+   console.log(box);
+   
+}
+
+function isCar(value: unknown): value is Car{
+  const car = value as Car;
+  return car?.model != null && car?.name != null;
+}
