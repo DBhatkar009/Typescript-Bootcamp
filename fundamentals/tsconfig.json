@@ -1,7 +1,12 @@
 {
+
     "compilerOptions": {
         "target": "esnext",
         "forceConsistentCasingInFileNames": true,
         "strict": true
-    }
+    },
+    "files": [
+        "23-intersection-types.ts",
+        // "main.ts"
+    ]
 }
