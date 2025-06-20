@@ -1,3 +1,4 @@
+"use strict";
 var myBookOfRead = ['Harry Potter', 'Order of pheonix', 255];
 // function expression with object interfaces
 var bookShowRoom = function (title, subtitle, lessoncount) {

@@ -1,3 +1,4 @@
+"use strict";
 var _a, _b, _c;
 // This code Demonstrates the use of null and undefined in Typescript, Along with optional Chaining.
 var simplePerson;

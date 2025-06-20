@@ -1,3 +1,4 @@
+"use strict";
 // Literal types in Typescript
 var jUser = "john"; //literal types 
 console.log("Literal types in string: ", jUser);

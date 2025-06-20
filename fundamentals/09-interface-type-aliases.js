@@ -1,3 +1,4 @@
+"use strict";
 var modeUser = {
     name: 'john',
     age: 30,

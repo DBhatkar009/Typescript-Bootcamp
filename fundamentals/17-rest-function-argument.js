@@ -1,3 +1,4 @@
+"use strict";
 var coursebookDetails1 = {
     title: "Learn Javascript",
     description: "A comprehensive guide to mastering JavaScript.",

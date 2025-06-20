@@ -1,3 +1,4 @@
+"use strict";
 var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
     if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
         if (ar || !(i in from)) {
@@ -32,4 +33,3 @@ var newUserNumbers = __spreadArray(__spreadArray([], userNumbers, true), [5, 6, 
 console.log("newUserNumbers:", newUserNumbers); // Output: newUserNumbers: [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 var one = userNumbers[0], two = userNumbers[1], three = userNumbers[2], four = userNumbers[3];
 console.log("Destructured values:", one, two, three, four); // Output: Destructured values: 1 2 3 4
-//# sourceMappingURL=13-Arrow-function.js.map

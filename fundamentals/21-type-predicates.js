@@ -1,3 +1,4 @@
+"use strict";
 // understanding typescript unknown Types
 var garden;
 garden = [];
@@ -26,17 +27,8 @@ home = null;
 home = {};
 home = undefined;
 if (typeof home === "string") {
-    var val_1 = home;
+    var val = home;
 }
-var val = home; //
-var val1 = home;
-var val2 = home;
-var val3 = home;
-var val4 = home;
-var val5 = home;
-var val6 = home;
-var val7 = home;
-var val8 = home;
 var car = {
     name: "Audi",
     model: "5445AD",

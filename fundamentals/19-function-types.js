@@ -1,3 +1,4 @@
+"use strict";
 // function types
 // function declaration
 function add(x, y) {

@@ -1,3 +1,4 @@
+"use strict";
 var paper = ["paperBook", "paperBoat", "paperDish"];
 // let map: never = "France";
 // map = 56;

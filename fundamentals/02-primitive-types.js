@@ -1,3 +1,4 @@
+"use strict";
 // primitive types in typescript
 // Typescript supports 7 primitive types:
 // number, string, boolean, null, undefined, symbol, bigint

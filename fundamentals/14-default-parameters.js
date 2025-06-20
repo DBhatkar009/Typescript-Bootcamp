@@ -1,3 +1,4 @@
+"use strict";
 // Typescript allows you to set default values for function parameters.
 // This is useful when you want to provide a default value for a parameter if it is not provided by the caller.
 function greet(name, age, isDriversLicenseHolder) {

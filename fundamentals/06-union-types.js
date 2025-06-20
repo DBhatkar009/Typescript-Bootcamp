@@ -1,3 +1,4 @@
+"use strict";
 // Union Types in Typescript
 // Union types allow a variable to hold multiple types of values.
 var uniqueIdData = "jvb46546464566bf4gb4fb466";

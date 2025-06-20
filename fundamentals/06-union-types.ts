@@ -39,3 +39,6 @@ console.log(userAge);
 
 let createUser: number | null;
 createUser!.toString(); // Using non-null assertion operator (!) to tell typescript that createUser is not null or undefined
+
+
+

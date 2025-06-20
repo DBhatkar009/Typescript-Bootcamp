@@ -1,3 +1,4 @@
+"use strict";
 var laptop = "gaming";
 console.log("Laptop type: ", laptop);
 var dell = {

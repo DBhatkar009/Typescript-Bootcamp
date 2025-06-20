@@ -1,3 +1,4 @@
+"use strict";
 var courseName = "Typescript Bootcamp Version 3.0";
 // Let, Const & Var Declarations Differences
 if (courseName) {

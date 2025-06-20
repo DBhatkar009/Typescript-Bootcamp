@@ -1,3 +1,4 @@
+"use strict";
 var count = [1, 2, 3, 4, 5];
 count.push(6);
 // numbers.push("this is a name");
