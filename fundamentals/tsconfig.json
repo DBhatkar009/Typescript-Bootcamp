@@ -3,16 +3,19 @@
     "compilerOptions": {
         "target": "esnext",
         "forceConsistentCasingInFileNames": true,
-        "strict": true
+        "strict": true,
+        "rootDir": "src",
+        "outDir": "dist",
+        "module": "commonjs"
     },
     // "files": [
     //     // "src/23-intersection-types.ts",
     //     // "main.ts"
     // ],
-    "include": [
-        "src/**/*"
-    ],
-    "exclude": [
-        "fundamentals/11-module-reExport/**/*"
-    ]
+    // "include": [
+    //     "src/**/*"
+    // ],
+    // "exclude": [
+    //     "fundamentals/11-module-reExport/**/*"
+    // ]
 }
