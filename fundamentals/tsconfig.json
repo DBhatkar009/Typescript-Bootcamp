@@ -3,10 +3,36 @@
     "compilerOptions": {
         "target": "esnext",
         "forceConsistentCasingInFileNames": true,
-        "strict": true
+        "strict": true,
+        "rootDir": "src",
+        "outDir": "dist",
+        "module": "commonjs",
+        "baseUrl": "src/modules",
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "noEmitOnError": true,
+        "strictNullChecks": true,
+        "noEmit": true,
+        "removeComments": false,
+        // "allowJs": true,
+        // "checkJs": true,
+        // "lib": [
+        //     "ES2016",
+        //     "DOM"
+        // ],
+        "types": [
+             "express"
+        ]
     },
     "files": [
-        "23-intersection-types.ts",
+        "src/26-plain-javascript.js"
         // "main.ts"
-    ]
+    ],
+    
+    // "include": [
+    //     "src/**/*"
+    // ],
+    // "exclude": [
+    //     "fundamentals/11-module-reExport/**/*"
+    // ]
 }

@@ -30,16 +30,24 @@ const course = {
     }
 };
 
-const title = course?.book?.title ?? "No Title Available"; // Using Optional Chaining and Nullish Coalescing
-console.log(`course title: ${title}`);
+const coTitle: string = course?.book?.title ?? "No Title Available"; // Using Optional Chaining and Nullish Coalescing
+console.log(`course title: ${coTitle}`);
 
 
 
 //Using Optional Chaining With Functions Error Handling
 // This function will check if the book property exists in the course object
 getBookTitle(course); 
-function getBookTitle(course){
+interface Book {
+    title: string;
+}
 
+interface Course {
+    name: string;
+    book?: Book;
+}
+
+function getBookTitle(course: Course): void {
     if(!course?.book){ // check if course.book exists
         console.log("Book title is Not Available");
         return;

@@ -4,9 +4,9 @@
 // Typescript Type Inference 
 // Typescript Type Annotations
 const total: number = 200;
-const price: number = 300;
+const itemPrice: number = 300;
 
-const subTotoal: number = total + price;
+const subTotoal: number = total + itemPrice;
 console.log(`Sub Total is: ${subTotoal}`);
 
 
