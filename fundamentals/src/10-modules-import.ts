@@ -1,8 +1,8 @@
 // Importing a constant from another module
 import { COURSE_AUTHOR, COURSE_DURATION, COURSE_LEVEL, COURSE_TYPE } from './10-modules-export.ts'
-import { feature1, feature2, COURSE_LEVEL1 } from "../11-module-reExport/11-module-reExport.ts"; // Importing features and course level from another module
+import { feature1, feature2, COURSE_LEVEL1 } from "./modules/11-module-reExport.js"; // Importing features and course level from another module
 // Importing a constant from another module
-
+import { HELLO_WORLD } from "./26-plain-javascript.js";
 
 const myCourse = COURSE_TYPE;
 

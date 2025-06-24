@@ -6,12 +6,29 @@
         "strict": true,
         "rootDir": "src",
         "outDir": "dist",
-        "module": "commonjs"
+        "module": "commonjs",
+        "baseUrl": "src/modules",
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "noEmitOnError": true,
+        "strictNullChecks": true,
+        "noEmit": true,
+        "removeComments": false,
+        // "allowJs": true,
+        // "checkJs": true,
+        // "lib": [
+        //     "ES2016",
+        //     "DOM"
+        // ],
+        "types": [
+             "express"
+        ]
     },
-    // "files": [
-    //     // "src/23-intersection-types.ts",
-    //     // "main.ts"
-    // ],
+    "files": [
+        "src/26-plain-javascript.js"
+        // "main.ts"
+    ],
+    
     // "include": [
     //     "src/**/*"
     // ],
