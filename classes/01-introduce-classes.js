@@ -14,6 +14,9 @@ var Course = /** @class */ (function () {
         this.creationDt = creationDt;
     }
     Object.defineProperty(Course.prototype, "title", {
+        get: function () {
+            return this.ntitle;
+        },
         set: function (newTitle) {
             if (!newTitle) {
                 throw new Error("Title can not be Empty");
@@ -33,6 +36,8 @@ var Course = /** @class */ (function () {
     });
     return Course;
 }());
-var course = new Course("Typescript Bootcamp");
-course.title = "New Title Appear here!";
-console.log(course);
+var typescript = new Course("Typescript Bootcamp");
+// typescript.title = "New Title Appear here!";
+console.log(typescript.title);
+var Angular = new Course("Angular Bootcamp");
+console.log(Angular.title);

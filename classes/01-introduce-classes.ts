@@ -15,6 +15,9 @@ class Course {
         this.creationDt = creationDt;
     }
 
+    get title() {
+        return this.ntitle;
+    }
 
     set title(newTitle: string){
         if(!newTitle){
@@ -31,7 +34,10 @@ class Course {
     }
 }
 
-const course = new Course("Typescript Bootcamp");
+const typescript = new Course("Typescript Bootcamp");
 
-course.title = "New Title Appear here!";
-console.log(course);
+// typescript.title = "New Title Appear here!";
+console.log(typescript.title);
+
+const Angular = new Course("Angular Bootcamp");
+console.log(Angular.title);
