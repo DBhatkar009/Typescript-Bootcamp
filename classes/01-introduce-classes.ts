@@ -1,19 +1,29 @@
 // Classes 
 
 class Course {
-    title: string;
-    subtitle: string;
-    creationDt: Date;
+//    private title: string;
+//    private subtitle: string;
+//    private creationDt: Date;
      
-    constructor(title: string,
-    subtitle: string,
-    creationDt: Date) {
-        this.title = title;
+    constructor(
+    private ntitle: string,
+    private subtitle: string,
+    private creationDt: Date) {
+        this.ntitle = ntitle;
         this.subtitle = subtitle;
         this.creationDt = creationDt;
     }
 
-    age(){
+
+    set title(newTitle: string){
+        if(!newTitle){
+            throw new Error("Title can not be Empty");
+              }
+              this.ntitle = newTitle;
+    }
+   
+
+    get age(){
        const ageTime = new Date().getTime() - this.creationDt.getTime();
 
        return Math.round(ageTime / 1000 / 60 / 24);
@@ -26,4 +36,5 @@ const course = new Course(
     new Date(2025,6,24)
 );
 
-console.log(course.age());
+course.title = "New Title Appear here!";
+console.log(course);
