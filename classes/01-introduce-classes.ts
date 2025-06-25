@@ -7,8 +7,9 @@ class Course {
      
     constructor(
     private ntitle: string,
-    private subtitle: string,
-    private creationDt: Date) {
+    private subtitle = '',
+    private creationDt = new Date(2025,1,14)
+) {
         this.ntitle = ntitle;
         this.subtitle = subtitle;
         this.creationDt = creationDt;
@@ -30,11 +31,7 @@ class Course {
     }
 }
 
-const course = new Course(
-    "Typescript Bootcamp",
-    "Understanding Typescript Fundaments & classes",
-    new Date(2025,6,24)
-);
+const course = new Course("Typescript Bootcamp");
 
 course.title = "New Title Appear here!";
 console.log(course);

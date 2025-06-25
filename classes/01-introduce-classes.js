@@ -4,6 +4,8 @@ var Course = /** @class */ (function () {
     //    private subtitle: string;
     //    private creationDt: Date;
     function Course(ntitle, subtitle, creationDt) {
+        if (subtitle === void 0) { subtitle = ''; }
+        if (creationDt === void 0) { creationDt = new Date(2025, 1, 14); }
         this.ntitle = ntitle;
         this.subtitle = subtitle;
         this.creationDt = creationDt;
@@ -31,6 +33,6 @@ var Course = /** @class */ (function () {
     });
     return Course;
 }());
-var course = new Course("Typescript Bootcamp", "Understanding Typescript Fundaments & classes", new Date(2025, 6, 24));
+var course = new Course("Typescript Bootcamp");
 course.title = "New Title Appear here!";
 console.log(course);
