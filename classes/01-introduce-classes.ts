@@ -19,13 +19,14 @@ class Course {
         // this.subtitle = subtitle;
         // this.creationDt = creationDt;
 
-        this.validate(this);
+        this.validate();
         Course.Total_Course++;
 
     }
 
-       validate(course: Course){
-         if(course.price <=0){
+       validate(){
+        console.log("Called Course Validate()");
+         if(this.price <=0){
             throw new Error("Price must be greater then Zero!!");
             
          }
@@ -54,17 +55,32 @@ class Course {
     }
 }
 
-Course.Total_Course;
+class FreeCourse extends Course {
+    constructor(
+     title: string,
+     subtitle = '',
+     creationDt = new Date(2025,1,14)
+    ){
+       super(title, 0, subtitle, creationDt);
+    }
+
+    validate() {
+        console.log("called FreeCourse Validate()");
+    
+    }
+}
+
+// Course.Total_Course;
 // Course.NEW_TITLE = '';
 const typescript = new Course(Course.NEW_TITLE, 0);
 
 // typescript.title = "New Title Appear here!";
-console.log(typescript.title);
-Course.printTitle(typescript);
+console.log(typescript);
+// Course.printTitle(typescript);
 
-const Angular = new Course("Angular Bootcamp", 0);
-console.log(Angular.title);
+const angular = new FreeCourse("Angular Bootcamp");
+console.log(angular);
 console.log(Course.NEW_TITLE);
 console.log(Course.Total_Course);
-console.log();
+
 
