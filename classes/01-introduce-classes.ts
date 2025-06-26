@@ -10,10 +10,10 @@ class Course {
     static NEW_TITLE = "Typescript Course";
 
     constructor(
-    private ntitle: string,
-    private price: number,
-    private subtitle = '',
-    private creationDt = new Date(2025,1,14)
+    protected ntitle: string,
+    protected price: number,
+    protected subtitle = '',
+    protected creationDt = new Date(2025,1,14)
 ) {
         // this.ntitle = ntitle;
         // this.subtitle = subtitle;
@@ -24,7 +24,7 @@ class Course {
 
     }
 
-       validate(){
+       protected validate(){
         console.log("Called Course Validate()");
          if(this.price <=0){
             throw new Error("Price must be greater then Zero!!");
@@ -66,8 +66,7 @@ class FreeCourse extends Course {
 
     validate() {
         console.log("called FreeCourse Validate()");
-    
-    }
+    } 
 }
 
 // Course.Total_Course;
