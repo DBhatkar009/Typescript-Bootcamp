@@ -1,6 +1,7 @@
-// Classes 
+import { HashId, HashTitle } from "./02-interfaces";
 
-abstract class Course {
+// Classes 
+abstract class Course implements HashTitle {
 //    private title: string;
 //    private subtitle: string;
 //    private creationDt: Date;
@@ -10,6 +11,7 @@ abstract class Course {
     static NEW_TITLE = "Typescript Course";
 
    protected constructor(
+    public id: string,
     protected ntitle: string,
     protected price: number,
     protected subtitle = '',
@@ -23,6 +25,11 @@ abstract class Course {
         Course.Total_Course++;
 
     }
+
+       printId(){
+        console.log(`this course id is ${this.id}`);
+        
+       }
 
        protected validate(){
         console.log("Called Course Validate()");
@@ -57,11 +64,12 @@ abstract class Course {
 
 class FreeCourse extends Course {
     constructor(
+     id: string,
      title: string,
      subtitle = '',
      creationDt = new Date(2025,1,14)
     ){
-       super(title, 0, subtitle, creationDt);
+       super(id, title, 0, subtitle, creationDt);
     }
 
    protected validate() {
@@ -77,8 +85,9 @@ class FreeCourse extends Course {
 // console.log(typescript);
 // Course.printTitle(typescript);
 
-const angular = new FreeCourse("Angular Bootcamp");
+const angular = new FreeCourse("1","Angular Bootcamp");
 console.log(angular);
+console.log(angular.id);
 console.log(Course.NEW_TITLE);
 console.log(Course.Total_Course);
 

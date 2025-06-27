@@ -1,4 +1,4 @@
-// Classes 
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -14,20 +14,26 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+Object.defineProperty(exports, "__esModule", { value: true });
+// Classes 
 var Course = /** @class */ (function () {
-    function Course(ntitle, price, subtitle, creationDt) {
+    function Course(id, ntitle, price, subtitle, creationDt) {
         // this.ntitle = ntitle;
         // this.subtitle = subtitle;
         // this.creationDt = creationDt;
         if (subtitle === void 0) { subtitle = ''; }
         if (creationDt === void 0) { creationDt = new Date(2025, 1, 14); }
+        this.id = id;
         this.ntitle = ntitle;
         this.price = price;
         this.subtitle = subtitle;
         this.creationDt = creationDt;
-        // this.validate();
+        this.validate();
         Course.Total_Course++;
     }
+    Course.prototype.printId = function () {
+        console.log("this course id is ".concat(this.id));
+    };
     Course.prototype.validate = function () {
         console.log("Called Course Validate()");
         if (this.price <= 0) {
@@ -67,23 +73,24 @@ var Course = /** @class */ (function () {
 }());
 var FreeCourse = /** @class */ (function (_super) {
     __extends(FreeCourse, _super);
-    function FreeCourse(title, subtitle, creationDt) {
+    function FreeCourse(id, title, subtitle, creationDt) {
         if (subtitle === void 0) { subtitle = ''; }
         if (creationDt === void 0) { creationDt = new Date(2025, 1, 14); }
-        return _super.call(this, title, 0, subtitle, creationDt) || this;
+        return _super.call(this, id, title, 0, subtitle, creationDt) || this;
     }
     FreeCourse.prototype.validate = function () {
         console.log("called FreeCourse Validate()");
     };
     return FreeCourse;
 }(Course));
-Course.Total_Course;
+// Course.Total_Course;
 // Course.NEW_TITLE = '';
-var typescript = new Course(Course.NEW_TITLE, 0);
+// const typescript = new Course(Course.NEW_TITLE, 0);
 // typescript.title = "New Title Appear here!";
-console.log(typescript);
-Course.printTitle(typescript);
-var angular = new FreeCourse("Angular Bootcamp");
+// console.log(typescript);
+// Course.printTitle(typescript);
+var angular = new FreeCourse("1", "Angular Bootcamp");
 console.log(angular);
+console.log(angular.id);
 console.log(Course.NEW_TITLE);
 console.log(Course.Total_Course);
