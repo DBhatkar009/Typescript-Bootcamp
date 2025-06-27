@@ -1,15 +1,22 @@
 {
 
     "compilerOptions": {
-        "target": "ES2018",
+        "target": "ES2016",
         "forceConsistentCasingInFileNames": true,
+        "module": "commonjs",
         "strict": true,
         "rootDir": ".",
         "outDir": "dist",
-        "noEmitOnError": true,
-        "removeComments": false,
-        "skipLibCheck": true, 
-        "noEmit": true,
-        "strictNullChecks": true
-    }
+        // "noEmitOnError": true,
+        // "removeComments": false,
+        // "skipLibCheck": true, 
+        // "noEmit": true,
+        // "strictNullChecks": true,
+        // "allowJs": true,
+        // "checkJs": true
+    },
+    // "files": [
+    //     "dist/01-introduce-classes.js"
+    // ]
+
 }

@@ -1,4 +1,5 @@
 import { HashId, HashTitle } from "./02-interfaces";
+import { CourseService } from "./03-singleton";
 
 // Classes 
 abstract class Course implements HashTitle {
@@ -20,7 +21,7 @@ abstract class Course implements HashTitle {
         // this.ntitle = ntitle;
         // this.subtitle = subtitle;
         // this.creationDt = creationDt;
-
+       const service = CourseService.instance();
         this.validate();
         Course.Total_Course++;
 
@@ -84,7 +85,7 @@ class FreeCourse extends Course {
 // typescript.title = "New Title Appear here!";
 // console.log(typescript);
 // Course.printTitle(typescript);
-
+CourseService.instance();
 const angular = new FreeCourse("1","Angular Bootcamp");
 console.log(angular);
 console.log(angular.id);
