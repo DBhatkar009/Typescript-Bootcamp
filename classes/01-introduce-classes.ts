@@ -1,6 +1,6 @@
 // Classes 
 
-class Course {
+abstract class Course {
 //    private title: string;
 //    private subtitle: string;
 //    private creationDt: Date;
@@ -9,7 +9,7 @@ class Course {
 
     static NEW_TITLE = "Typescript Course";
 
-    constructor(
+   protected constructor(
     protected ntitle: string,
     protected price: number,
     protected subtitle = '',
@@ -64,17 +64,17 @@ class FreeCourse extends Course {
        super(title, 0, subtitle, creationDt);
     }
 
-    validate() {
+   protected validate() {
         console.log("called FreeCourse Validate()");
     } 
 }
 
 // Course.Total_Course;
 // Course.NEW_TITLE = '';
-const typescript = new Course(Course.NEW_TITLE, 0);
+// const typescript = new Course(Course.NEW_TITLE, 0);
 
 // typescript.title = "New Title Appear here!";
-console.log(typescript);
+// console.log(typescript);
 // Course.printTitle(typescript);
 
 const angular = new FreeCourse("Angular Bootcamp");
