@@ -1,0 +1,15 @@
+{
+
+    "compilerOptions": {
+        "target": "ES2018",
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "rootDir": ".",
+        "outDir": "dist",
+        "noEmitOnError": true,
+        "removeComments": false,
+        "skipLibCheck": true, 
+        "noEmit": true,
+        "strictNullChecks": true
+    }
+}

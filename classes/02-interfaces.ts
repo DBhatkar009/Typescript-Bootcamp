@@ -1,6 +1,6 @@
 export interface HashId {
    id: string,
-   printId();
+   printId(): void;
 }
 
 
